@@ -1,0 +1,16 @@
+@import "/src/main/global.scss";
+
+.nftimage{
+    // border: 10px solid var(--accent);
+    border-radius: 10%;
+    filter: drop-shadow(0 0 0.75rem var(--accent));
+    width: 100%;
+    height: auto; 
+}
+
+// @media only screen and (max-width: 480px) {
+//     .nftimage {
+//       width: 100%;
+//       height: auto;
+//     }
+//   }

@@ -1,0 +1,24 @@
+@import "/src/main/global.scss";
+
+.gallery{
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* set the number of columns and the minimum and maximum width of each column */
+    grid-gap: 1rem; /* add some space between the items */
+    margin: 1rem;
+}
+
+@media (max-width: 900px) {
+    /* change the number of columns on smaller screens */
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    /* change the number of columns on even smaller screens */
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
